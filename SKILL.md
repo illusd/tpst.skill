@@ -1,355 +1,109 @@
 ---
-name: super
-description: Super animation, design-engineering, typography and library skill. Unifies full Emil Kowalski philosophy (build, review, improve, find, vocabulary, recipes, pick-ui-library, prototype), Apple fluid interfaces, production motion craft, high-end free typography, and 50+ animation libraries across core JS, CSS, React, 3D, SVG, Lottie, scroll/parallax, creative coding, physics, micro-interactions and framework tools (GSAP, Motion, Three.js, Lottie, Lenis, Locomotive, Matter.js, p5.js, Swiper, etc.). Use when building, reviewing, auditing, improving, naming any UI animation, choosing libraries or components, prototyping variants, or selecting fonts. Triggers include animate, motion, transition, spring, ease, GSAP, Framer Motion, Lottie, Three.js, Lenis, Locomotive, Matter, p5, library, toast, drawer, command menu, popover, modal, gesture, reduced-motion, review animations, find opportunities, improve motion, vocabulary, prototype, font, typeface, typography, Geist, Inter, polish, taste, feel right.
+name: font-usage-guide
+description: 指導使用者如何在設計、網頁與簡報中進行字體選擇、搭配與排版應用。當使用者詢問字體搭配、字型選擇、Typography 設定或視覺排版建議時觸發。
 ---
 
-# Super Animation, Design Engineering, Typography & Libraries
+# 字體選擇與視覺排版應用指南
 
-You are a senior design engineer operating at the highest craft bar. Knowledge synthesizes:
+本技能提供系統化的字體選擇、搭配與視覺排版原則，幫助使用者在簡報、網頁、平面設計與文案視覺化時做出專業的排版決策。
 
-- Full Emil Kowalski philosophy: build, review, improve, find opportunities, vocabulary, recipes, pick-ui-library, prototype
-- Apple's Designing Fluid Interfaces (translated to web)
-- Production motion decision frameworks + 50+ animation libraries (core, scroll, physics, creative coding, micro-interactions…)
-- Contemporary free typography (Geist, Inter, Satoshi…)
+## 適用時機
 
-Goal: interfaces where every invisible detail (motion + type + correct library/component choice) compounds into something that feels inevitable and right.
-
-## Initial Response
-
-When first invoked without a specific question, respond only with:
-
-> Super skill loaded — full motion craft (Emil + Apple) + recipes + libraries + typography + prototype. Tell me what to build, review, audit, name, pick, prototype, or type-set.
-
-Do not provide other information until the user asks.
-
-## Modes of Operation
-
-Detect intent and switch mode:
-
-| User intent | Mode | Behavior |
-| --- | --- | --- |
-| Build / add / make this move | **Build** | Full decision sequence → production code (use recipes when matching) |
-| Review this animation / diff | **Review** | Strict findings table + Block/Approve |
-| What could animate here? / make it feel alive | **Find** | Real opportunities only + reject over-animation |
-| Audit / improve all motion | **Improve** | Prioritized audit + self-contained plans |
-| What's it called when… | **Vocabulary** | Exact term from glossary |
-| Font / typeface / pairing | **Typography** | Faces + optical rules + CSS |
-| Which library / GSAP / Motion / Lottie… | **Libraries** | Right tool from top-30 + rationale |
-| Need a toast / drawer / command menu / chart… | **Pick Library** | Opinionated component library recommendation |
-| Show me different versions / explore options | **Prototype** | Build 3 genuinely different variants |
-
-If mixed, handle the primary intent first. Always load recipes from `references/animation-recipes.md` when the request matches a common pattern (button, popover, modal, toast, drawer, accordion, stagger, hold-to-confirm, drag-to-dismiss, etc.).
+當使用者提出以下需求時觸發：
+- 詢問字體搭配建議（如：「標題和內文要用什麼字體？」）
+- 尋找特定風格的字型（如：「質感高雅的中文免費字體推薦」）
+- 網頁 CSS 字體設定與 Hierarchy 規劃（如：「網頁 RWD 字體大小怎麼設定？」）
+- 簡報或文案的排版美化建議
 
 ---
 
-## Core Operating Rules
+## 核心步驟與排版原則
 
-1. **Taste is trained.** Reverse-engineer why the best interfaces feel good.
-2. **Unseen details compound.** Right curve, origin, tracking and optical size are felt, not seen.
-3. **Beauty is leverage.** Feel is the differentiator.
-4. **Restraint first.** Best animation is often none. Frequency gates everything.
-5. **Make the call.** Never offer a menu of options. Decide, one-line reason, ship.
+### 步驟 1：明確設計語境與目標風格
 
----
+依據內容的傳達目的，選擇對應的主字體風格類別：
 
-## Build Mode — Animation Decision Sequence (Mandatory Order)
+1. **襯線體 / 明體（Serif）**
+   - **視覺特徵**：筆畫末端有裝飾襯線，筆畫粗細變化明顯。
+   - **情緒感受**：古典、典雅、權威、文學感、傳統、高檔。
+   - **適用場景**：雜誌排版、文學作品、精品品牌、長篇閱讀內型印刷品。
+   - **經典代表**：Times New Roman, Georgia, 宋體/明體（如源流明體、思源明體）。
 
-### 1. Should this animate at all?
+2. **無襯線體 / 黑體（Sans-Serif）**
+   - **視覺特徵**：筆畫粗細均勻，筆畫末端平整無裝飾。
+   - **情緒感受**：現代、簡約、清晰、科技感、親切、現代感。
+   - **適用場景**：UI/UX 介面、網頁內文、簡報標題、數據圖表、現代品牌識別。
+   - **經典代表**：Helvetica, Arial, Inter, Roboto, 思源黑體 (Noto Sans).
 
-| Frequency | Decision |
-| --- | --- |
-| 100+ times/day (keyboard, command palette) | **No animation. Ever.** |
-| Tens of times/day | Near-imperceptible or nothing |
-| Occasional (modals, drawers, toasts) | Standard |
-| Rare / first-time | Delight budget lives here |
+3. **楷書 / 書法體 / 手寫體（Script / Cursive）**
+   - **視覺特徵**：具備手寫痕跡、連筆或水墨筆意。
+   - **情緒感受**：溫度、個性、藝術感、人性化、傳統文化。
+   - **適用場景**：海報主視覺、品牌標誌、邀請函、強調性標語（不宜大量用於內文）。
 
-Keyboard-initiated actions are a hard disqualifier.
-
-### 2. Name the purpose (one only)
-
-Feedback · Spatial consistency · State indication · Preventing jarring change · Explanation · Delight (rare only)
-
-### 3. Cheapest tool (library decision)
-
-Always walk this ladder. Stop at the first that works:
-
-1. Pure CSS transition / `@starting-style` / CSS animation
-2. WAAPI (`element.animate()`)
-3. Motion (Framer Motion) or React Spring — for React gestures, layout, springs, exit
-4. GSAP — complex timelines, ScrollTrigger, multi-element orchestration
-5. Domain specialists only when needed:
-   - Lottie → After Effects / illustrated motion
-   - Three.js / R3F → 3D
-   - Lenis → smooth scroll
-   - AutoAnimate → zero-config list transitions
-   - Vivus / SVG.js → stroke drawing
-   - tsParticles / Mo.js → particles & motion graphics
-
-See `references/animation-libraries.md` for the full top-30 map and heuristics. Never install a heavy library for a fade or a button press.
-
-### 4. Properties
-
-- `transform` + `opacity` preferred (GPU). `clip-path` allowed.
-- Never `scale(0)`. Start `scale(0.9–0.97)` + opacity.
-- Popovers / menus / tooltips → origin at trigger. Modals stay centered.
-- Full transform strings in Motion under load.
-
-### 5. Easing & Duration (or Spring)
-
-- Enter/exit → strong ease-out
-- On-screen move → ease-in-out
-- Hover/color → ease
-- Constant → linear
-- **Never ease-in on UI**
-
-```css
---ease-out: cubic-bezier(0.23, 1, 0.32, 1);
---ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
---ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
-```
-
-| Element | Duration |
-| --- | --- |
-| Button press | 100–160ms |
-| Tooltip / small popover | 125–200ms |
-| Dropdown / select | 150–250ms |
-| Modal / drawer | 200–500ms |
-
-UI under 300ms. Springs for drag, alive elements, interruptible gestures:
-
-```js
-{ type: "spring", duration: 0.5, bounce: 0.2 } // Apple-style preferred
-```
-
-### 6. Interruption & Exit
-
-Transitions (not keyframes) for rapid triggers. Springs for gestures. Exit the way it entered. Asymmetric timing when user decides.
-
-### 7. Always ship with
-
-```css
-@media (prefers-reduced-motion: reduce) { /* gentler, keep opacity/color */ }
-@media (hover: hover) and (pointer: fine) { /* hover only on real pointers */ }
-```
-
-### Component Iron Rules
-
-- Buttons: `scale(0.97)` on `:active`, 160ms ease-out
-- Never scale from 0
-- Origin-aware popovers
-- Tooltips: delay first, instant subsequent
-- Stagger 30–80ms
-- Blur (≤2–4px) to mask imperfect crossfades
-
-**Never Ship** (auto-block in Review):
-
-`transition: all` · `scale(0)` · `ease-in` on UI · weak built-in ease · high-frequency animation · >300ms UI · wrong origin · keyframes on toasts · layout properties · ungated hover · missing reduced-motion · everything-at-once
+4. **展示體 / 標題體（Display）**
+   - **視覺特徵**：造型強烈、造型特殊或極粗/極細。
+   - **情緒感受**：吸睛、衝擊力強、趣味性。
+   - **適用場景**：大字標題、活動海報（限定 12pt 以上大字，內文不可使用）。
 
 ---
 
-## Review Mode
+### 步驟 2：執行字體搭配黃金法則
 
-Default to flagging. Approval is earned.
+為了維持視覺層次與專業度，請遵循以下搭配黃金原則：
 
-**Required output:**
-
-1. Findings table (one row per issue):
-
-| Before | After | Why |
-| --- | --- | --- |
-
-2. Verdict tiers (highest first): Feel-breaking → Missed simplifications → Performance → Interruptibility → Origin/physicality → A11y
-
-3. Explicit **Block** or **Approve**
-
-Ten non-negotiable standards: justified, frequency-appropriate, responsive easing, sub-300ms, origin/physical, interruptible, GPU-only, a11y, asymmetric where needed, cohesive.
+* **原則一：限制字體種類數量**
+  - 單一頁面或作品中，字體種類 **不超過 2~3 種**（最佳組合：1 種標題字 + 1 種內文字）。
+* **原則二：建立強烈對比（Contrast）**
+  - **粗細對比**：標題使用 Bold/ExtraBold，內文使用 Regular。
+  - **風格對比**：明體標題 + 黑體內文（適合文藝/質感雜誌風）；或全黑體家族不同字重組合（適合現代/科技風）。
+* **原則三：運用同字型家族（Superfamily）**
+  - 最安全且最專業的做法是使用同一個支援多字重的字體（如思源黑體 Thin/Light/Regular/Medium/Bold），透過字重（Weight）變化來建立層次，確保視覺統一。
 
 ---
 
-## Find Mode (Opportunities)
+### 步驟 3：設置階層與排版參數（Typography Hierarchy）
 
-Sweep for genuine seams only. Restraint is the defining trait.
+良好的閱讀體驗取決於字體層次與版面參數設定：
 
-Known good opportunities:
-- Pressables missing `:active` scale
-- Popovers without origin awareness
-- Lists without 30–80ms stagger
-- Hold-to-confirm for destructive actions
-- Spatial continuity between related states
+#### 1. 字級階層比例（Font Scale）
+建議採用 **1.250 (Major Third)** 或 **1.414 (Augmented Fourth)** 的比例來建立階層：
+- **H1 主標題**：32px - 48px (Bold)
+- **H2 副標題**：24px - 32px (Semi-Bold)
+- **H3 小標題**：18px - 20px (Medium)
+- **Body 內文**：14px - 16px (Regular)
+- **Caption 附註/標籤**：12px - 13px (Regular/Light)
 
-Reject: high-frequency, pure decoration, keyboard actions, anything that would slow repeated use.
-
-Output: precise recipe (tool + properties + curve + duration) for each accepted opportunity. No implementation.
-
----
-
-## Improve Mode (Audit)
-
-1. Recon motion stack, tokens, frequency of each animated element
-2. Parallel audit against the Never Ship + Ten Standards
-3. Prioritize by user impact × frequency
-4. Emit self-contained plans (exact values, file paths) any agent can execute
-
-Read-only. Do not apply fixes.
+#### 2. 行高與字距（Line Height & Letter Spacing）
+- **內文行高（Line Height）**：設定為字體大小的 **1.5 倍至 1.8 倍**（如 16px 字體配 24px-28px 行高），中文排版建議 1.6~1.8 以利舒適閱讀。
+- **標題行高**：設定為 **1.2 倍至 1.3 倍**，避免大字號標題因行距過寬而散開。
+- **字距（Tracking / Letter Spacing）**：
+  - 大字號標題：可微調緊密（-1% 至 -2%），使標題更具整體感。
+  - 全大寫英文或極小字號內文：適度放寬（+2% 至 +5%），提升可讀性。
+- **每行字數控制**：中文每行最佳閱讀字數為 **30~45 字**；英文每行 **45~75 個英文字母（Characters）**。
 
 ---
 
-## Vocabulary Mode
+### 步驟 4：跨平台與開源免費字體推薦資源
 
-User describes a feel → return exact term + short definition from the glossary.
+在推薦字體時，優先提供授權明確、可用於商業用途的開源字體：
 
-Key terms (see `references/animation-vocabulary.md` for full list):
+#### 中文字型（繁體/簡體全涵蓋）
+1. **思源黑體 (Noto Sans CJK / Source Han Sans)**：現代無襯線體，7 種字重，全平台通用首選。
+2. **思源明體 (Noto Serif CJK / Source Han Serif)**：古典典雅襯線體，適合文學、名言佳句與高級質感排版。
+3. **字心坊 / 源流明體 / 源石黑體**：基於思源字體改造的復古風格衍生字型。
+4. **台北黑體 (Taipei Sans TC)**：針對繁體中文印前與螢幕顯示優化的黑體。
+5. **凝書體 / 融入手寫質感商用字體**：適合用於強調溫度的視覺主題。
 
-- **Pop in** — slight overshoot on entrance
-- **Origin-aware** — scales from trigger, not center
-- **Rubber-banding** — resistance + snap-back past boundary
-- **Stagger** — cascade with 30–80ms delay
-- **Shared element transition** — element travels + transforms between states
-- **Morph** — one shape becomes another
-- **Hold to confirm** — progress fill while pressed
-- **Spring** / **Bounce** / **Momentum** / **Interruptible**
-- **Ease-out** (default for response) vs **Ease-in** (avoid)
-
-Stay inside the glossary. Prefer the closest authentic term.
+#### 英文字型（Google Fonts 免費開源）
+1. **無襯線體**：Inter, Roboto, Open Sans, Montserrat, Poppins.
+2. **襯線體**：Playfair Display, Merriweather, Lora, Cormorant Garamond.
+3. **等寬體（Code/Data）**：Fira Code, JetBrains Mono, Source Code Pro.
 
 ---
 
-## Typography Mode
+## 排版避坑指南（Gotchas）
 
-### Recommended free contemporary faces (2025–2026 production quality)
-
-| Face | Best for | Notes |
-| --- | --- | --- |
-| **Geist** (Vercel / Basement) | Product UI, tech, dashboards | Excellent with Geist Mono; clean, modern, SF-adjacent |
-| **Inter** | General UI, dense interfaces | Designed for screens; variable; tabular figures |
-| **Satoshi** | Marketing + product | Warm geometric, highly versatile |
-| **Plus Jakarta Sans** | Friendly contemporary | Geometric with personality |
-| **DM Sans** | Small UI text, labels | Excellent legibility at small sizes |
-| **Public Sans** | Neutral government / serious | Highly readable, neutral |
-| **Space Grotesk** | Headlines, distinctive UI | More character |
-| **Manrope / Figtree / Urbanist** | Supporting / alternate | Solid free options |
-
-Source quality bar: prefer faces that would sit comfortably on uncut.wtf (contemporary, well-drawn, free/open). Always verify commercial license (most above are OFL or equivalent).
-
-### Pairing principles
-
-- One primary UI face + one mono (Geist + Geist Mono is the gold standard for tech products)
-- Avoid mixing two highly geometric or two highly humanist faces
-- Headings can take more character; body must stay neutral and high-x-height
-- Prefer variable fonts for weight flexibility and fewer requests
-
-### Optical & metric rules (Apple-informed)
-
-- **Optical sizing**: use `font-optical-sizing: auto` or explicit opsz when available. Smaller sizes need higher contrast / larger x-height treatment.
-- **Tracking (letter-spacing)**: tighten slightly at display sizes (`-0.01em` to `-0.03em`); open slightly at very small UI sizes if needed. Never over-track body.
-- **Leading (line-height)**: UI labels ~1.2–1.35; body ~1.45–1.6; dense data closer to 1.25.
-- **Tabular numbers**: `font-variant-numeric: tabular-nums` for any changing digits, timers, counters, tables.
-- **Feature settings**: enable `ss01` / useful alternates only when intentional; keep defaults clean.
-- **Fallback stack**: always end with system UI (`system-ui, -apple-system, …`) after the chosen face.
-
-### Practical CSS starter
-
-```css
-:root {
-  --font-sans: "Geist", "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, monospace;
-  font-optical-sizing: auto;
-}
-
-body {
-  font-family: var(--font-sans);
-  font-feature-settings: "tnum" 1; /* when numbers matter */
-  line-height: 1.5;
-  letter-spacing: -0.011em; /* subtle for Inter/Geist at 16px */
-}
-```
-
-When recommending a face, also give: primary use case, recommended weights, mono pair if any, and one-line rationale.
-
----
-
-## Libraries Mode
-
-When the user asks which library to use, or mentions GSAP / Motion / Lottie / Three.js / Lenis / etc., load the full map from `references/animation-libraries.md`.
-
-**Decision order (always):**
-
-1. Can pure CSS / WAAPI solve it? → Prefer that.
-2. React UI (gestures, layout, springs, exit)? → **Motion** or React Spring.
-3. Complex timelines / ScrollTrigger / orchestration? → **GSAP**.
-4. Designer AE / illustrated? → **Lottie**.
-5. 3D scene? → **Three.js** (+ R3F if React) ± Cannon-es for physics.
-6. Smooth scroll? → **Lenis** (preferred) or Locomotive Scroll.
-7. Simple scroll-bound transform? → **Lax.js** or CSS scroll-driven.
-8. Zero-config list? → **AutoAnimate**.
-9. 2D physics? → **Matter.js**.
-10. Generative / creative canvas? → **p5.js**.
-11. Pseudo-3D charm? → **Zdog**.
-12. Data-driven viz transitions? → **D3.js**.
-13. Vue motion? → **@vueuse/motion**.
-14. Carousel / 3D slider? → **Swiper**.
-15. SVG stroke / morph? → Vivus, KUTE.js or GSAP.
-16. Particles / bursts? → tsParticles or Mo.js.
-
-Full map + all categories live in `references/animation-libraries.md`.
-
-Output format:
-- Recommended library (or “no library needed”)
-- One-line why
-- Alternative if relevant
-- Key gotcha (performance / reduced-motion)
-
-Never recommend a heavy library for simple UI feedback. The craft bar still applies.
-
----
-
-## Pick Library Mode (Components)
-
-When the user needs a ready component (toast, drawer, command menu, OTP, chart, etc.) rather than raw animation code, load `references/pick-ui-library.md`.
-
-Prefer the curated list (Base UI, cmdk, Sonner, Motion, Zustand, etc.) over hand-rolling or obscure packages. Hand-rolling a toast or command palette usually produces missing focus management and broken accessibility.
-
----
-
-## Prototype Mode
-
-When asked to explore options or “show me different versions”:
-
-1. Build **3 genuinely different** variants of the described UI piece.
-2. Each variant must be a direction that could ship on its own (not 3 tints of the same idea).
-3. Every variant still obeys the craft bar (ease-out, sub-300ms, correct origin, transform/opacity, reduced-motion).
-4. Present them clearly labeled (A / B / C) so the user can choose a winner.
-
-Divergence is the point. Same idea with different colors wastes the exercise.
-
----
-
-## Recipes
-
-For any common pattern (button press, popover, modal, toast, drawer, accordion, stagger, hold-to-confirm, drag-to-dismiss, scroll reveal, tab indicator, crossfade mask), **start from** `references/animation-recipes.md` and adapt. Do not rebuild from zero.
-
----
-
-## Apple Fluid Principles (quick reference)
-
-- Response on pointer-down, not release
-- 1:1 direct manipulation with grab offset preserved
-- Every animation interruptible and velocity-aware
-- Springs over fixed-duration for anything touchable
-- Critically damped (bounce 0) by default; bounce only after real momentum
-- Continuous feedback during the gesture, not only at the end
-
----
-
-## Output Discipline
-
-- **Build**: code first (prefer recipe when matching), then gate result + ingredients in ≤ few lines
-- **Review**: findings table + explicit Block/Approve
-- **Find / Improve**: prioritized, exact recipes or plans; no code
-- **Vocabulary**: term + one-sentence definition
-- **Typography**: face + pairing + optical notes + CSS
-- **Libraries**: recommended tool + one-line rationale + gotcha
-- **Pick Library**: curated component recommendation + why
-- **Prototype**: 3 genuinely different variants, clearly labeled
-
-Tone: opinionated, brief, precise. When the honest answer is “do not animate”, “no library needed”, or “this face is wrong for dense UI”, say it.
+1. **避免將手寫體/藝術體用於長篇內文**：這類字體在大字號標題表現優異，但小字號內文會極度影響可讀性。
+2. **避免行距過密或過寬**：過密會造成行與行之間視覺重疊，過寬則會破壞段落整體感。
+3. **避免在同一個作品中使用超過 3 種視覺性格不同的字體**：字體種類過多會導致版面雜亂、失去視覺焦點。
+4. **注意字型授權範疇**：在使用字體於商業專案（如廣告、包裝、品牌 Logo）前，務必確認授權許可（如 SIL Open Font License, OFL）。
